@@ -1,0 +1,70 @@
+* {
+    font-family: "M PLUS Rounded 1c", serif;
+    margin: 0;
+}
+
+@keyframes fadein {
+    from {
+        margin-top: 10%;
+        opacity: 0%;
+    }
+
+    to {
+        margin-top: 0%;
+        opacity: 100%;
+    }
+}
+
+@keyframes hoveranimation {
+    from {
+        position: relative;
+        right: 25%;
+        opacity: 0%;
+    }
+
+    to {
+        position: relative;
+        right: 0%;
+        opacity: 100%;
+    }
+}
+
+body {
+    background-color: #010C25;
+    color: #F6FDF9;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    background-color: #191919;
+    height: 100px;
+}
+
+footer img {
+    background-color: #0B3E64;
+    width: 100px;
+    height: 100px;
+    padding-right: 5px;
+    border-right: #F6FDF9 solid 5px;
+    animation-duration: 1s;
+    animation-name: hoveranimation;
+}
+
+.TextBox {
+    height: calc(50vh - 2.2rem);
+    position: relative;
+}
+
+.Text {
+    display: flex;
+    justify-content: center;
+    animation-duration: 1s;
+    animation-name: fadein;
+}
+
+.Text:hover {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
